@@ -4,17 +4,15 @@
 /* eslint-disable prettier/prettier */
 
 const key = document.querySelector('key');
-document.addEventListener('keydown', logKey);
+document.addEventListener('keydown', playSound);
 
 const audio = document.querySelector('audio');
 document.addEventListener('keydown', playSound);
 
 
-
-function logKey(e) {
-    console.log(e)
-};
-
 function playSound(e) {
     console.log(e)
+    audio.play();
 };
+
+
