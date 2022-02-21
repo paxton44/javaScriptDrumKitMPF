@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 
 
-//make function for sounds that play when you hit keys on the keyboard.
+const key = document.getElementById('key');
+document.addEventListener('keydown', logKey);
 
-// function keyTrigger() {
-// 
-// }
+function logKey(e) {
+    console.log(e)
+};
