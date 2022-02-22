@@ -12,7 +12,7 @@ document.addEventListener('keydown', playSound);
 
 function playSound(e) {
     console.log(e)
-    audio.play();
+    audio.play(e);
 };
 
 
