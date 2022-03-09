@@ -3,6 +3,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 
+// Making Keys Fire and Play Sounds
+
 const key = document.querySelector('key');
 document.addEventListener('keydown', playSound);
 
