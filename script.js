@@ -5,16 +5,16 @@
 
 // Making Keys Fire and Play Sounds
 
-const key = document.querySelector('key');
-document.addEventListener('keydown', playSound);
+window.addEventListener('keydown', function(e) {
+    // Using Template Literal to select any keycode pressed
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    // checking to see if keys fire
+    console.log(audio);
+    // making if statement to stop audio if no audio available 
+    if (!audio) return;
+    // firing sounds by the key ids
+    audio.play();
+});
 
-const audio = document.querySelector('audio');
-document.addEventListener('keydown', playSound);
-
-
-function playSound(e) {
-    console.log(e)
-    audio.play(e);
-};
 
 
